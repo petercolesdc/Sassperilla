@@ -1,0 +1,57 @@
+@import "compass/css3";
+@import "compass/utilities";
+
+
+// List styles
+// -------------------------------------------------------
+
+@mixin unordered {
+	 list-style-position: inside; 
+	 list-style-type: disc;
+}
+
+@mixin ordered {
+	list-style-position: inside; 
+	list-style-type: decimal;
+}
+
+@mixin nobullet {
+	list-style-type: none;
+}
+
+
+// Hyphens 
+// -------------------------------------------------------
+
+@mixin hyphen {
+	hyphenate: auto; 
+	hyphenate-lines: 3;  
+	-webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+	hyphenate-character: "-"; 
+	hyphenate-limit-chars: auto 3; 
+	hyphenate-limit-last: page; 
+}
+
+// Advanced typography settings
+// -------------------------------------------------------
+
+@mixin advancedtype {
+	font-variant-ligatures: contextual;  			// Set the default for ligatures
+	font-kerning: normal; 							// Set the default for kerning
+	text-rendering: optimizeLegibility; 			// Improve kerning pairs
+	-webkit-text-size-adjust:none; 					// Stop iPhone from scaling text
+	//-moz-font-feature-settings: "liga=1,dlig=1";
+	//-webkit-font-smoothing: antialiased; 			// Improve (or in some cases royally fuck) safari's legibility somewhat
+	//font-synthesis: none; 						// Don't allow the font to create sythetic bold/italic
+}
+
+// Transitions
+// -------------------------------------------------------
+
+@mixin color_transition {
+	@include transition-property(color); 
+	@include transition-duration(0.3s); 
+	@include transition-timing-function(ease-in-out);
+}

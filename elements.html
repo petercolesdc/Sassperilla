@@ -1,0 +1,203 @@
+<!doctype html>
+<head>
+</head>
+<body>
+	
+	<h1>A default header level one</h1>
+	<h2>A default header level two</h2>
+	<h3>A default header level three</h3>
+	<h4>A default header level four</h4>
+	<h5>A default header level five</h5>
+	<h6>A default header level six</h6>
+
+	<p>
+	The <a href="#">a element</a> example<br>
+
+	The <abbr title="Title text">abbr element</abbr> example<br>
+	The <b>b element</b> example<br>
+	The <cite>cite element</cite> example<br>
+
+	The <code>code element</code> example<br>
+	The <del>del element</del> example<br>
+	The <dfn>dfn element</dfn> example<br>
+
+	The <em>em element</em> example<br>
+	The <i>i element</i> example<br>
+	The <ins>ins element</ins> example<br>
+
+	The <kbd>kbd element</kbd> example<br>
+	The <mark>mark element</mark> example<br>
+	The <q>q element <q>inside</q> a q element</q> example<br>
+
+	The <samp>samp element</samp> example<br>
+	The <small>small element</small> example<br>
+	The <span>span element</span> example<br>
+
+	The <strong>strong element</strong> example<br>
+	The <sub>sub element</sub> example<br>
+	The <sup>sup element</sup> example<br>
+
+	The <var>var element</var> example<br>
+	The <u>u element</u> example
+	</p>
+
+	<ol>
+		<li>Clambering quickly aloft I grasped the edge of the eaves and drew myself to the surface of the roof above</li>
+		<li>As I gained my feet I was confronted by the sentry on duty, into the muzzle of whose revolver I found myself looking</li>
+		<li>Who are you and whence came you? he cried</li>
+	</ol>
+
+	<ul>
+		<li>Clambering quickly aloft I grasped the edge of the eaves and drew myself to the surface of the roof above</li>
+		<li>As I gained my feet I was confronted by the sentry on duty, into the muzzle of whose revolver I found myself looking</li>
+		<li>Who are you and whence came you? he cried</li>
+	</ul>
+
+	<blockquote>
+		<p>I am an air scout, friend, and very near a dead one, for just by the merest chance I escaped falling to the avenue below</p>
+		<cite>Author</cite>
+	</blockquote>
+
+			
+	<table summary="Jimi Hendrix albums">
+		<caption>Jimi Hendrix - albums</caption>
+		<thead>
+			<tr>
+				<th>Album</th>
+				<th>Year</th>
+				<th>Price</th>
+
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<th>Album</th>
+				<th>Year</th>
+				<th>Price</th>
+
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td>Are You Experienced</td>
+				<td>1967</td>
+				<td>$10.00</td>
+
+			</tr>
+			<tr>
+				<td>Axis: Bold as Love</td>
+				<td>1967</td>
+				<td>$12.00</td>
+			</tr>
+			<tr>
+
+				<td>Electric Ladyland</td>
+				<td>1968</td>
+				<td>$10.00</td>
+			</tr>
+			<tr>
+				<td>Band of Gypsys</td>
+				<td>1970</td>
+
+				<td>$12.00</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<form>
+		<fieldset>
+			<legend>Inputs as descendents of labels (form legend)</legend>
+
+			<label>Text input <input type="text" value="default value"></label>
+			<label>Email input <input type="email"></label>
+			<label>Search input <input type="search"></label>
+			<label>Tel input <input type="tel"></label>
+			<label>URL input <input type="url" placeholder="http://"></label>
+			<label>Password input <input type="password" value="password"></label>
+
+			<label>File input <input type="file"></label>
+			
+			<label>Radio input <input type="radio" name="rad"></label>
+			<label>Checkbox input <input type="checkbox"></label>
+			<label><input type="radio" name="rad"> Radio input</label>
+			<label><input type="checkbox"> Checkbox input</label>
+
+			<label>Select field <select><option>Option 01</option><option>Option 02</option></select></label>
+			<label>Textarea <textarea cols="30" rows="5" >Textarea text</textarea></label>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Inputs as siblings of labels</legend>
+			<label for="ic">Color input</label> <input type="color" id="ic" value="color">
+
+			<label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5">
+			<label for="ir">Range input</label> <input type="range" id="ir" value="range">
+			<label for="idd">Date input</label> <input type="date" id="idd" value="date">
+			<label for="idm">Month input</label> <input type="month" id="idm" value="month">
+			<label for="idw">Week input</label> <input type="week" id="idw" value="week">
+
+			<label for="idt">Datetime input</label> <input type="datetime" id="idt" value="datetime">
+			<label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="datetime-local">
+
+			<label for="irb">Radio input</label> <input type="radio" id="irb" name="rad">
+			<label for="icb">Checkbox input</label> <input type="checkbox" id="icb">
+
+			<input type="radio" id="irb2" name="rad"> <label for="irb2">Radio input</label>
+			<input type="checkbox" id="icb2"> <label for="icb2">Checkbox input</label>
+			
+			<label for="s">Select field</label> <select id="s"><option>Option 01</option><option>Option 02</option></select>
+			<label for="t">Textarea</label> <textarea id="t" cols="30" rows="5" >Textarea text</textarea>
+
+		</fieldset>
+		
+		<fieldset>
+			<legend>Clickable inputs and buttons</legend>
+			<input type="image" src="http://placehold.it/90x24" alt="Image (input)">
+			<input type="reset" value="Reset (input)">
+			<input type="button" value="Button (input)">
+			<input type="submit" value="Submit (input)">
+
+			<button type="reset">Reset (button)</button>
+
+			<button type="button">Button (button)</button>
+			<button type="submit">Submit (button)</button>
+		</fieldset>
+		
+		<fieldset>
+			<legend>box-sizing tests</legend>
+			<div><input type="text" value="text"></div>
+			<div><input type="email" value="email"></div>
+
+			<div><input type="search" value="search"></div>
+			<div><input type="url" value="http://"></div>
+			<div><input type="password" value="password"></div>
+
+			<div><input type="color" value="color"></div>
+			<div><input type="number" value="number"></div>
+			<div><input type="range" value="range"></div>
+			<div><input type="date" value="date"></div>
+			<div><input type="month" value="month"></div>
+
+			<div><input type="week" value="week"></div>
+			<div><input type="datetime" value="datetime"></div>
+			<div><input type="datetime-local" value="datetime-local"></div>
+			
+			<div><input type="radio"></div>
+			<div><input type="checkbox"></div>
+			
+			<div><select><option>Option 01</option><option>Option 02</option></select></div>
+			<div><textarea cols="30" rows="5" >Textarea text</textarea></div>
+
+			<div><input type="image" src="http://placehold.it/90x24" alt="Image (input)"></div>
+			<div><input type="reset" value="Reset (input)"></div>
+			<div><input type="button" value="Button (input)"></div>
+			<div><input type="submit" value="Submit (input)"></div>
+
+			<div><button type="reset">Reset (button)</button></div>
+			<div><button type="button">Button (button)</button></div>
+			<div><button type="submit">Submit (button)</button></div>
+
+		</fieldset>
+	</form>
+</body>
+</html>

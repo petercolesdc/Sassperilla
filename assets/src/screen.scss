@@ -1,0 +1,82 @@
+// Imports pre-render 
+// ------------------------------------------------------------
+
+@import "mixins";
+
+
+// Colours
+// ------------------------------------------------------------
+
+$text			: #505050;
+$headers		: $text;
+$link			: $text;
+$link-respond	: $text;
+
+
+/* Simple reset*/
+/* ---------------------------------------------------------- */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin: 0; padding: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+th { text-align: left;}
+fieldset, img { border: 0; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal; }
+ol, ul { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+q:before, q:after { content: ''; }
+abbr, acronym { border: 0; }
+header, footer, section, article, nav, menu, figure, figcaption, aside, hgroup { display: block; }
+.clearfix { @include pie-clearfix; }
+.max_width { max-width: 100%; }
+img { border: 0; -ms-interpolation-mode: bicubic; image-rendering: optimizeQuality; }
+::-moz-selection { color:#fff; background:$link; } ::selection { color:#fff; background:$link; }
+
+
+/* Global defaults */
+/* ----------------------------------------------------------- */
+
+html {
+	
+}
+
+body { 
+	color:$text;
+}
+
+
+a {
+	color:$link;
+	word-wrap: break-word;
+	&:hover, &:focus, &:active { color:$link-respond; }
+}
+
+
+/* Global typography */
+/* ---------------------------------------------------------- */
+
+.serif 	{ font-family: Georgia, serif; }
+.sans 	{ font-family: Arial, sans-serif; }
+
+
+p, li 		{ @include hyphen; }
+strong, b 	{ font-weight: 600; }
+em, i, q 	{ font-style: italic; }
+
+
+
+/* Extras */
+/* ---------------------------------------------------------- */
+
+/* Hide things */
+.hide, .hidefromiphone, .hidefromphone, .hidefromipad, .hidefromtablet .hidefromdesktop {
+	display: none;
+	height: 0;
+	text-indent: -999em;
+}
+
+.hangbullet { list-style-position: outside; }
+
+.case_up 	{ text-transform: uppercase; letter-spacing: 2px; /* I like to kern my uppercase text a bit */ }
+.case_low 	{ text-transform: lowercase; }
+.case_reset { text-transform: capitalize; }
